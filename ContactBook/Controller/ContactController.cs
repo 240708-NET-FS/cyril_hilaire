@@ -435,7 +435,7 @@ public class ContactController
                 contactService.Delete(contact);
             }
 
-            Console.WriteLine("{0}, {1} has been updated successfully.", 
+            Console.WriteLine("{0}, {1} has been deleted successfully.", 
             deletedFirstname, 
             deletedLastname);
         }
