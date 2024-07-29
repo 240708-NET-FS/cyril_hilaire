@@ -81,7 +81,7 @@ public class ContactController
             bool isParsable = Int32.TryParse(choiceStr, out choiceInt);
             if (!isParsable)
             {
-                Console.WriteLine("Could not be parsed.");
+                // Console.WriteLine($"'{choiceStr}' is not a number.");
                 choiceInt = 0;
             }
 
@@ -109,7 +109,7 @@ public class ContactController
                 Console.WriteLine(OPT_EXIT_VALUE);
                 break;
             default:
-                Console.WriteLine("");
+                Console.WriteLine($"'{choiceStr}' is not an option.");
                 break;
             }
 
@@ -265,7 +265,7 @@ public class ContactController
                     bool isParsable = Int32.TryParse(choiceSearchStr, out choiceContactInt);
                     if (!isParsable)
                     {
-                        Console.WriteLine("Could not be parsed.");
+                        Console.WriteLine($"'{choiceSearchStr}' is not a number.");
                         choiceContactInt = 0;
                     }
 
@@ -296,7 +296,7 @@ public class ContactController
                     bool isParsable = Int32.TryParse(choiceSearchStr, out choiceInt);
                     if (!isParsable)
                     {
-                        Console.WriteLine("Could not be parsed.");
+                        // Console.WriteLine($"'{choiceSearchStr}' is not a number.");
                         choiceInt = 0;
                     }
 
@@ -318,7 +318,7 @@ public class ContactController
                         Console.WriteLine(OPT_EXIT_VALUE);
                         break;
                     default:
-                        Console.WriteLine("");
+                        Console.WriteLine($"'{choiceSearchStr}' is not an option.");
                         break;
                     }
 
